@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YpbYbswEJI249EiaPRhnp7uHBaPLv+Atm3FEeuOnR2zmTCrSPRCD6u8gDy3hE4MYWHXvmQTTHUREoQSnqgDEIQ==",
+  "dgSpecHash": "zkz/0o06k68/WYjp6W78gIGBHTlrehywBbQrTDvvxGj3xXjWBbu3EAK+/R8fmJnXDm/cPCa4y/UD7Fiytz/IVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ozmen\\GitHub\\BTK-ASP-NET-CORE-MVC\\Store\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Viya\\source\\repos\\store-app\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -11,26 +11,26 @@
     </div>
     <div class="col-md-9">
         <div class="row my-3">
-@foreach (Product prd in Model)
-{
-    <partial name="_ProductCard" model="@prd" />
+            @foreach (Product prd in Model)
+            {
+                <partial name="_ProductCard" model="@prd" />
 
-    @* <div>
-        <h3>@prd.ProductName</h3>
-        <p>@prd.Price</p>
-        <p>
+                @* <div>
+            <h3>@prd.ProductName</h3>
+            <p>@prd.Price</p>
+            <p>
             <a href="/Product/Get/@prd.ProductId">Get Details</a>
-        </p>
-    </div> *@
-    @* bu alana gerek kalmadı partial view kullandık *@
-}
-</div>
+            </p>
+            </div> *@
+                @* bu alana gerek kalmadı partial view kullandık *@
+            }
+        </div>
 
     </div>
 </div>
 
 @section Footer
-{
+    {
     <div>Only for Product footer</div>
 }
 

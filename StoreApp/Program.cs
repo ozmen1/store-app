@@ -8,7 +8,7 @@ using Services.Contracts;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<RepositoryContext>(options => 
+builder.Services.AddDbContext<RepositoryContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"),
     b => b.MigrationsAssembly("StoreApp")); //migration'ın repositories'de değil de storeapp'te oluşması için.
@@ -35,28 +35,16 @@ app.UseRouting(); //routing mekanizmasının çalışması için
 
 app.UseEndpoints(endpoints =>
 {
+    endpoints.MapAreaControllerRoute(
+    name: "AdminArea",
+    areaName: "Admin",
+    pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}"
+);
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}"
     );
-    //endpoints.MapControllerRoute(
-    //    name: "default",
-    //    pattern: "{area?}/{controller=Home}/{action=Index}/{id?}"
-    //);
-    endpoints.MapAreaControllerRoute(
-        name: "AdminArea",
-        areaName: "Admin",
-        pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}"
-    );
-    //endpoints.MapAreaControllerRoute(
-    //    name: "{areaName}";
-    //pattern: "{area}/{controller=Home}/{action=Index}"
-    //    );
-    //endpoints.MapAreaControllerRoute(
-    //    name: "areaRoute",
-    //    areaName: "{area:exists}",
-    //    pattern: "{areaName}/{controller}/{action}"
-    //);
+
 });
 
 //Area yapılanmasını oluştururken buradaki rota yapılanmasını UdeEndpoints'e taşıdık.

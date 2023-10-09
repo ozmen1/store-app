@@ -1169,19 +1169,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ozmen\\.nuget\\packages\\": {}
+    "C:\\Users\\Viya\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ozmen\\GitHub\\BTK-ASP-NET-CORE-MVC\\Store\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\Viya\\source\\repos\\store-app\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\ozmen\\GitHub\\BTK-ASP-NET-CORE-MVC\\Store\\Repositories\\Repositories.csproj",
-      "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ozmen\\GitHub\\BTK-ASP-NET-CORE-MVC\\Store\\Repositories\\obj\\",
+      "projectPath": "C:\\Users\\Viya\\source\\repos\\store-app\\Repositories\\Repositories.csproj",
+      "packagesPath": "C:\\Users\\Viya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Viya\\source\\repos\\store-app\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Viya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1189,14 +1197,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/bkdZJgdOElpH4meLgDsw5akjmApylz8PCZeOP1AhYUiWRoRkPK/api": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ozmen\\GitHub\\BTK-ASP-NET-CORE-MVC\\Store\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\ozmen\\GitHub\\BTK-ASP-NET-CORE-MVC\\Store\\Entities\\Entities.csproj"
+            "C:\\Users\\Viya\\source\\repos\\store-app\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Viya\\source\\repos\\store-app\\Entities\\Entities.csproj"
             }
           }
         }
@@ -1236,7 +1246,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
