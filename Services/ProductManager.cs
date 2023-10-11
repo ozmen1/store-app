@@ -13,9 +13,16 @@ namespace Services
             _manager = manager;
         }
 
-        public void CreateProduct(Product product)
+        public void CreateOneProduct(Product product)
         {
             _manager.Product.Create(product);
+            _manager.Save();
+        }
+
+        public void DeleteOneProduct(int id)
+        {
+            var product = GetOneProduct(id, false) ?? new Product();
+            _manager.Product.DeleteOneProduct(product);
             _manager.Save();
         }
 

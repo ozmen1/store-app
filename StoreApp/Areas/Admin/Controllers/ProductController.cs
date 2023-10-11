@@ -31,7 +31,7 @@ namespace StoreApp.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                _manager.ProductService.CreateProduct(product);
+                _manager.ProductService.CreateOneProduct(product);
                 return RedirectToAction("Index");
             }
             return View();
@@ -53,6 +53,12 @@ namespace StoreApp.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+        }
+
+        public IActionResult Delete([FromRoute(Name = "id")] int id)
+        {
+            _manager.ProductService.DeleteOneProduct(id);
+            return RedirectToAction("Index");
         }
     }
 }
